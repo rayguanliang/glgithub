@@ -1,6 +1,6 @@
 const mongoClient = require('mongodb').MongoClient;
 //const url = process.env.MONGODB_URL
-const url = 'mongodb://20.62.177.157:27017/mydb';
+const url = 'mongodb://20.2.177.157:27017/mydb';
 //const url = 'mongodb://mynm-mongodb-0.mongodb-service:27017,mynm-mongodb-1.mongodb-service:27017,mynm-mongodb-2.mongodb-service:27017/mydb';
 //let mongodb;
 var express = require('express');
