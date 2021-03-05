@@ -1,0 +1,13 @@
+{
+  "name": "mynm",
+  "main": "mynodejs_3",
+  "scripts": {
+    "start": "node mynodejs_3"
+  }, 
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mongodb": "^4.0.0-beta.1",
+    "path": "^0.12.7"
+  }
+}

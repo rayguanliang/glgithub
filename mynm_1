@@ -1,0 +1,19 @@
+FROM node:14
+#RUN mkdir /nodejsmongo-project
+#WORKDIR /nodejsmongo-project
+WORKDIR /app
+RUN /bin/bash -c 'mkdir /app/views'
+COPY package*.json ./
+COPY ./views/index.ejs ./app/views
+RUN npm install
+#COPY package*.json /nodejsmongo-project/
+#COPY  . /nodejsmongo-project
+#RUN rm -rf node_modules package-lock.json && npm install
+#RUN npm install
+#RUN npm run build
+COPY . .
+#COPY . /nodejsmongo-project
+RUN /bin/bash -c 'chmod 757 /app'
+EXPOSE 3000
+
+CMD ["node", "mynodejs_3" ]
